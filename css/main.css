@@ -22,13 +22,39 @@ html {
 }
 
 .hand-hour {
+  transform-origin: center bottom;
+  animation: hour 3s linear infinite;
   position: absolute;
-  left: calc(50% - 6px);
-  top: calc(50% - 50px);
+  left: calc(50% - 7px);
+  top: calc(50% - 60px);
 }
 
 .hand-minute {
+  transform-origin: center bottom;
+  animation: minute 600ms linear infinite;
   position: absolute;
-  left: calc(50% - 6px);
+  left: calc(50% - 7px);
   top: calc(50% - 80px);
+}
+
+@keyframes hour {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes minute {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
