@@ -18,6 +18,7 @@ html {
 }
 
 .hand {
+  position: absolute;
   width: 14px;
 }
 
